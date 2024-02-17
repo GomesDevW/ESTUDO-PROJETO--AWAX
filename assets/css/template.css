@@ -154,7 +154,6 @@ header {
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
-    position: absolute;
     margin-top: -50px;
     display: flex;
     justify-content: center;
@@ -422,7 +421,9 @@ podemos usar o ----.section-service:first-child---- */
     margin: auto;
 }
 
-.section-team .sliders,
+.section-team .sliders-1,
+.sliders-2,
+.sliders-3
 .section-clients {
     width: 1000vw;
     height: 100%;
@@ -517,8 +518,9 @@ podemos usar o ----.section-service:first-child---- */
     background-color: #B28756;
 }
 
-
-
+.sliders-2, .sliders-3 {
+   display: none;
+}
 
 
 /*CLIENTE FELIZES*/
@@ -528,6 +530,7 @@ podemos usar o ----.section-service:first-child---- */
 .slide-clients {
     display: flex;
     overflow: hidden;
+    justify-content: center;
 }
 
 .section-clients {
@@ -1179,19 +1182,22 @@ textarea::placeholder {
         width: 45px;
         margin-right: 30px;
         display: block; 
+        
     }
 
     .menu a {
         border: 0;
         font-size: 20px;
+        border-bottom: 5px solid transparent;
     }
+    
 
     nav {
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.9);
         width: 60vw;
-        height: calc(100vh - 100px);
+        height: fit-content;
         top: 100px;
         right: 0;
         display: none;
@@ -1202,10 +1208,13 @@ textarea::placeholder {
         display: flex;
         flex-direction: column;
         padding-left: 30px;
+       
     }
 
-    li a {
+     li a {
         font-size: 40px;
+        
+        
     }
 
 
@@ -1367,22 +1376,21 @@ textarea::placeholder {
     }
 
     .menu a {
-        border: 0;
         font-size: 15px;
         height: 60px;
+        border-bottom: 5px solid transparent;
+
     }
 
     nav {
         position: absolute;
-        z-index: 99;
+        z-index: 9;
         background-color: rgba(0, 0, 0, 0.9);
         width: 70vw;
-        height: calc(80vh - 100px);
+        height: fit-content;
         top: 100px;
         right: 0;
         display: none;
-        
-        
     }
 
     nav ul {
